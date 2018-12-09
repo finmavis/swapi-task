@@ -12,14 +12,16 @@ const Header = styled.header`
   width: 100%;
   color: #fff;
   margin-bottom: 3rem;
+  text-align: center;
 `;
 
 const Back = styled.div`
   align-self: flex-start;
+  margin-bottom: 1.5rem;
 
   a {
     font-family: inherit;
-    font-size: 1.3rem;
+    font-size: 1.6rem;
     color: #9d9d9d;
     text-decoration: none;
     display: flex;
@@ -28,8 +30,8 @@ const Back = styled.div`
 
   svg {
     fill: #9d9d9d;
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 1.6rem;
+    height: 1.6rem;
   }
 `;
 
@@ -51,7 +53,8 @@ const DetailHeader = ({ title, director, producer }) => (
   <Header>
     <Back>
       <Link to='/'>
-        <BackLogo /> &ensp; Back to list
+        <BackLogo />
+        &ensp;Back to list
       </Link>
     </Back>
     <Title>{title}</Title>
