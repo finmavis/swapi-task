@@ -39,6 +39,7 @@ const Title = styled.h2`
   font-family: 'Star Jedi', 'Open Sans', sans-serif;
   font-size: 4rem;
   margin-bottom: 1.5rem;
+  letter-spacing: 2px;
 `;
 
 const Team = styled.p`

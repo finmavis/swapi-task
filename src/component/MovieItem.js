@@ -71,6 +71,7 @@ const MovieHeader = styled.div`
 const MovieTitle = styled.h3`
   font-family: 'Star Jedi', 'Open Sans', sans-serif;
   font-size: 2.2rem;
+  letter-spacing: 2px;
 
   .btn {
     color: currentColor;
