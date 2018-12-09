@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+/* 768px */
+@media (max-width: 48em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+/* 576px */
+@media (max-width: 36em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.6rem;
+  overflow-y: scroll;
+  color: #fff;
+}
+
+#root {
+  background: url("./component/assets/images/background.png");
+  background-size: contain;
+  min-height: 100vh;
+}
