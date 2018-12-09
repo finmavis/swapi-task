@@ -60,9 +60,17 @@ This project using Grid System which is using 3 Column because based on Content/
   ```
 
   or if you only want to use `Container`, well, you dont have to import `Row` and `Col`. but if you want to use `Col` you must wrap with `Container` and `Row`.
+  ```
+  import { Container, Row, Col } from 'path/to/grid/file';
 
-- Custom Grid
-  Also you can modify `Container`, `Row` or `Col` to achieve something that this `Grid` cant do, or you want to add some value or edit some value;
+  <Container>
+    <YourComponentHere />
+  <Container>
+  ```
+
+
+- Custom Grid<br>
+  Also you can modify `Container`, `Row` or `Col` to achieve something that this `Grid` cannot do, or you want to add some value or edit some value.
 
   ```
   import styled from 'styled-components';
