@@ -1,7 +1,7 @@
 {
   "main.css": "/swapi-task/static/css/main.d50396d7.chunk.css",
-  "main.js": "/swapi-task/static/js/main.f429df12.chunk.js",
-  "main.js.map": "/swapi-task/static/js/main.f429df12.chunk.js.map",
+  "main.js": "/swapi-task/static/js/main.9d12619d.chunk.js",
+  "main.js.map": "/swapi-task/static/js/main.9d12619d.chunk.js.map",
   "static/js/1.74762521.chunk.js": "/swapi-task/static/js/1.74762521.chunk.js",
   "static/js/1.74762521.chunk.js.map": "/swapi-task/static/js/1.74762521.chunk.js.map",
   "runtime~main.js": "/swapi-task/static/js/runtime~main.a8022f69.js",
@@ -19,6 +19,6 @@
   "static/media/bg-card-2.png": "/swapi-task/static/media/bg-card-2.b0a7b209.png",
   "static/css/main.d50396d7.chunk.css.map": "/swapi-task/static/css/main.d50396d7.chunk.css.map",
   "index.html": "/swapi-task/index.html",
-  "precache-manifest.61e50d4d09f2c0b4e71b75598c076295.js": "/swapi-task/precache-manifest.61e50d4d09f2c0b4e71b75598c076295.js",
+  "precache-manifest.a7682276cbf705d916675372eba5be12.js": "/swapi-task/precache-manifest.a7682276cbf705d916675372eba5be12.js",
   "service-worker.js": "/swapi-task/service-worker.js"
 }
