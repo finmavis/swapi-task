@@ -27,7 +27,7 @@ const Back = styled.div`
   }
 
   svg {
-    fill: #ffe81f;
+    fill: #9d9d9d;
     width: 1.5rem;
     height: 1.5rem;
   }

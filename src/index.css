@@ -28,10 +28,12 @@ body {
   font-size: 1.6rem;
   overflow-y: scroll;
   color: #fff;
+  background-color: #232323;
 }
 
 #root {
   background: url("./component/assets/images/background.png");
   background-size: contain;
   min-height: 100vh;
+  padding-bottom: 2rem;
 }
