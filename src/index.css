@@ -1,3 +1,15 @@
+@font-face {
+  font-family: 'Star Jedi';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Star Jedi'), local('StarJedi'),
+    url('./component/assets/fonts/Starjedi.ttf') format('truetype');
+}
+
+body {
+  font-family: 'Open Sans';
+}
+
 * {
   margin: 0;
   padding: 0;

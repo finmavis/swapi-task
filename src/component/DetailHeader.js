@@ -36,7 +36,7 @@ const Back = styled.div`
 `;
 
 const Title = styled.h2`
-  font-family: inherit;
+  font-family: 'Star Jedi', 'Open Sans', sans-serif;
   font-size: 4rem;
   margin-bottom: 1.5rem;
 `;
