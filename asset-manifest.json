@@ -1,7 +1,7 @@
 {
-  "main.css": "/swapi-task/static/css/main.5c41cf13.chunk.css",
-  "main.js": "/swapi-task/static/js/main.145ae2e6.chunk.js",
-  "main.js.map": "/swapi-task/static/js/main.145ae2e6.chunk.js.map",
+  "main.css": "/swapi-task/static/css/main.1751c5ba.chunk.css",
+  "main.js": "/swapi-task/static/js/main.9e40be87.chunk.js",
+  "main.js.map": "/swapi-task/static/js/main.9e40be87.chunk.js.map",
   "static/js/1.74762521.chunk.js": "/swapi-task/static/js/1.74762521.chunk.js",
   "static/js/1.74762521.chunk.js.map": "/swapi-task/static/js/1.74762521.chunk.js.map",
   "runtime~main.js": "/swapi-task/static/js/runtime~main.a8022f69.js",
@@ -13,12 +13,12 @@
   "static/media/bg-card-6.png": "/swapi-task/static/media/bg-card-6.6d1b75fb.png",
   "static/media/bg-card-7.png": "/swapi-task/static/media/bg-card-7.ef05bc88.png",
   "static/media/index.css": "/swapi-task/static/media/background.ac1668b7.png",
-  "static/media/logo.f4222968.svg": "/swapi-task/static/media/logo.f4222968.svg",
-  "static/media/loader.ad4ddcda.svg": "/swapi-task/static/media/loader.ad4ddcda.svg",
-  "static/media/back.e205a41a.svg": "/swapi-task/static/media/back.e205a41a.svg",
+  "static/media/logo.640c566f.svg": "/swapi-task/static/media/logo.640c566f.svg",
+  "static/media/loader.1c83b149.svg": "/swapi-task/static/media/loader.1c83b149.svg",
+  "static/media/back.f39d0051.svg": "/swapi-task/static/media/back.f39d0051.svg",
   "static/media/bg-card-2.png": "/swapi-task/static/media/bg-card-2.9834045e.png",
-  "static/css/main.5c41cf13.chunk.css.map": "/swapi-task/static/css/main.5c41cf13.chunk.css.map",
+  "static/css/main.1751c5ba.chunk.css.map": "/swapi-task/static/css/main.1751c5ba.chunk.css.map",
   "index.html": "/swapi-task/index.html",
-  "precache-manifest.4344a0f0e244d63114a14bb7342a109f.js": "/swapi-task/precache-manifest.4344a0f0e244d63114a14bb7342a109f.js",
+  "precache-manifest.9d8bcdfbd6c744d8b618caa887a7d33d.js": "/swapi-task/precache-manifest.9d8bcdfbd6c744d8b618caa887a7d33d.js",
   "service-worker.js": "/swapi-task/service-worker.js"
 }
