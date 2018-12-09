@@ -1,11 +1,12 @@
 {
-  "main.css": "/swapi-task/static/css/main.cadc1ebc.chunk.css",
-  "main.js": "/swapi-task/static/js/main.90e0408d.chunk.js",
-  "main.js.map": "/swapi-task/static/js/main.90e0408d.chunk.js.map",
+  "main.css": "/swapi-task/static/css/main.d50396d7.chunk.css",
+  "main.js": "/swapi-task/static/js/main.f429df12.chunk.js",
+  "main.js.map": "/swapi-task/static/js/main.f429df12.chunk.js.map",
   "static/js/1.74762521.chunk.js": "/swapi-task/static/js/1.74762521.chunk.js",
   "static/js/1.74762521.chunk.js.map": "/swapi-task/static/js/1.74762521.chunk.js.map",
   "runtime~main.js": "/swapi-task/static/js/runtime~main.a8022f69.js",
   "runtime~main.js.map": "/swapi-task/static/js/runtime~main.a8022f69.js.map",
+  "static/media/back.f39d0051.svg": "/swapi-task/static/media/back.f39d0051.svg",
   "static/media/bg-card-1.png": "/swapi-task/static/media/bg-card-1.0c96fd00.png",
   "static/media/bg-card-3.png": "/swapi-task/static/media/bg-card-3.1914d853.png",
   "static/media/bg-card-4.png": "/swapi-task/static/media/bg-card-4.c21c4d4b.png",
@@ -15,10 +16,9 @@
   "static/media/index.css": "/swapi-task/static/media/background.7b4adbed.png",
   "static/media/logo.640c566f.svg": "/swapi-task/static/media/logo.640c566f.svg",
   "static/media/loader.1c83b149.svg": "/swapi-task/static/media/loader.1c83b149.svg",
-  "static/media/back.f39d0051.svg": "/swapi-task/static/media/back.f39d0051.svg",
   "static/media/bg-card-2.png": "/swapi-task/static/media/bg-card-2.b0a7b209.png",
-  "static/css/main.cadc1ebc.chunk.css.map": "/swapi-task/static/css/main.cadc1ebc.chunk.css.map",
+  "static/css/main.d50396d7.chunk.css.map": "/swapi-task/static/css/main.d50396d7.chunk.css.map",
   "index.html": "/swapi-task/index.html",
-  "precache-manifest.d145a6183c00f5d04fc40a45c465cce8.js": "/swapi-task/precache-manifest.d145a6183c00f5d04fc40a45c465cce8.js",
+  "precache-manifest.61e50d4d09f2c0b4e71b75598c076295.js": "/swapi-task/precache-manifest.61e50d4d09f2c0b4e71b75598c076295.js",
   "service-worker.js": "/swapi-task/service-worker.js"
 }

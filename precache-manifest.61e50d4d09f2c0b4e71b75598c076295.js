@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/swapi-task/static/media/bg-card-5.67d061d6.png"
   },
   {
-    "revision": "90e0408db249c0e7efda",
-    "url": "/swapi-task/static/css/main.cadc1ebc.chunk.css"
+    "revision": "f429df12cee7633100b7",
+    "url": "/swapi-task/static/css/main.d50396d7.chunk.css"
   },
   {
     "revision": "74762521155e9c8eeb2f",
@@ -32,8 +32,8 @@ self.__precacheManifest = [
     "url": "/swapi-task/static/media/bg-card-4.c21c4d4b.png"
   },
   {
-    "revision": "90e0408db249c0e7efda",
-    "url": "/swapi-task/static/js/main.90e0408d.chunk.js"
+    "revision": "f429df12cee7633100b7",
+    "url": "/swapi-task/static/js/main.f429df12.chunk.js"
   },
   {
     "revision": "b4fea25d5476b89769b2a80d17e15db5",
@@ -42,6 +42,10 @@ self.__precacheManifest = [
   {
     "revision": "ae324be713d1c84674b78fea136ed0c8",
     "url": "/swapi-task/static/media/bg-card-7.ae324be7.png"
+  },
+  {
+    "revision": "cc3019aa6439ef893839b8a0d6d0391d",
+    "url": "/swapi-task/static/media/Starjedi.cc3019aa.ttf"
   },
   {
     "revision": "7b4adbed5cbde8d31112a28341e603b8",
@@ -60,7 +64,7 @@ self.__precacheManifest = [
     "url": "/swapi-task/static/media/back.f39d0051.svg"
   },
   {
-    "revision": "ad896df272dd2b77bf7b6baba83276e9",
+    "revision": "930ef3491c9a6bacfea0f4ca885653cf",
     "url": "/swapi-task/index.html"
   }
 ];
