@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/swapi-task/static/media/bg-card-5.52c4355b.png"
   },
   {
-    "revision": "f83d8272c72e526064b8",
+    "revision": "145ae2e6310093faabce",
     "url": "/swapi-task/static/css/main.5c41cf13.chunk.css"
   },
   {
@@ -32,8 +32,8 @@ self.__precacheManifest = [
     "url": "/swapi-task/static/media/bg-card-4.1214cd13.png"
   },
   {
-    "revision": "f83d8272c72e526064b8",
-    "url": "/swapi-task/static/js/main.f83d8272.chunk.js"
+    "revision": "145ae2e6310093faabce",
+    "url": "/swapi-task/static/js/main.145ae2e6.chunk.js"
   },
   {
     "revision": "6d1b75fb27eda266863943679fa2e512",
@@ -60,7 +60,7 @@ self.__precacheManifest = [
     "url": "/swapi-task/static/media/back.e205a41a.svg"
   },
   {
-    "revision": "81848a0436cde7e1f4386e69df0474c9",
+    "revision": "d744591083bf8ef4528cf773057d95af",
     "url": "/swapi-task/index.html"
   }
 ];
