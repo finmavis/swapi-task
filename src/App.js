@@ -5,6 +5,8 @@ import Header from './component/Header';
 import MovieList from './container/MovieList';
 import MovieDetail from './container/MovieDetail';
 
+import GlobalStyle from './component/styles/Global';
+
 class App extends Component {
   render() {
     return (
@@ -14,6 +16,7 @@ class App extends Component {
           <Route path='/movie/:id' component={MovieDetail} />
           <Route path='/' component={MovieList} />
         </Switch>
+        <GlobalStyle />
       </Fragment>
     );
   }

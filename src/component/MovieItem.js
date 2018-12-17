@@ -1,11 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
-import { Col } from './styles/Grid';
+import MovieHeader from './MovieHeader';
+import MovieDescription from './MovieDescription';
+import MovieLink from './MovieLink';
 
-import formatDate from '../helpers/formatDate';
+import { Col } from './styles/Grid';
 
 import bgCardOne from './assets/images/bg-card-1.png';
 import bgCardTwo from './assets/images/bg-card-2.png';
@@ -62,68 +63,12 @@ const MovieContent = styled.div`
   }
 `;
 
-const MovieHeader = styled.div`
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 1.7rem;
-`;
-
-const MovieTitle = styled.h3`
-  font-family: 'Star Jedi', 'Open Sans', sans-serif;
-  font-size: 2.2rem;
-  letter-spacing: 2px;
-
-  .btn {
-    color: currentColor;
-    text-decoration: none;
-    cursor: pointer;
-  }
-`;
-
-const MovieDate = styled.span`
-  color: #cac7c8;
-  font-size: 1.4rem;
-`;
-
-const MovieDescription = styled.p`
-  font-family: inherit;
-  color: #fff;
-  overflow-wrap: break-word;
-  white-space: normal;
-  margin-bottom: 2.5rem;
-`;
-
-const MovieLink = styled.p`
-  padding-top: 1.2rem;
-  font-size: 1.4rem;
-  text-transform: capitalize;
-  border-top: 2px solid #8e2e2e;
-  color: #ffe81f;
-
-  .btn {
-    color: currentColor;
-    text-decoration: none;
-    cursor: pointer;
-  }
-`;
-
 const MovieItem = ({ id, title, description, releaseDate }) => (
   <ColCustom>
     <MovieContent>
-      <MovieHeader>
-        <MovieTitle>
-          <Link className='btn' to={`/movie/${id}`}>
-            {title}
-          </Link>
-        </MovieTitle>
-        <MovieDate>{formatDate(releaseDate)}</MovieDate>
-      </MovieHeader>
-      <MovieDescription>{description.substring(0, 260)}...</MovieDescription>
-      <MovieLink>
-        <Link className='btn' to={`/movie/${id}`}>
-          More info
-        </Link>
-      </MovieLink>
+      <MovieHeader id={id} title={title} releaseDate={releaseDate} />
+      <MovieDescription description={description} />
+      <MovieLink id={id} />
     </MovieContent>
   </ColCustom>
 );
