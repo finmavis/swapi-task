@@ -9,8 +9,7 @@ Clone this repo :
 ```git clone https://github.com/finmavis/tmdb-clone.git```
 
 Navigate to the root folder and install all dependencies :
-- [Yarn](https://yarnpkg.com) : `yarn install`
-- [NPM](https://yarnpkg.com) : `npm install`
+- `yarn install` or `npm install`
 
 Start Development Mode :
 - `yarn start` or `npm start`
