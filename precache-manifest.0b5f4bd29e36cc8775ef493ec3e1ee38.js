@@ -4,12 +4,8 @@ self.__precacheManifest = [
     "url": "/swapi-task/static/media/bg-card-5.67d061d6.png"
   },
   {
-    "revision": "9d12619d5c0deb86ed60",
-    "url": "/swapi-task/static/css/main.d50396d7.chunk.css"
-  },
-  {
-    "revision": "74762521155e9c8eeb2f",
-    "url": "/swapi-task/static/js/1.74762521.chunk.js"
+    "revision": "c49435e82a21463c57a2",
+    "url": "/swapi-task/static/js/main.c49435e8.chunk.js"
   },
   {
     "revision": "a8022f69631dfbbba3c8",
@@ -32,8 +28,8 @@ self.__precacheManifest = [
     "url": "/swapi-task/static/media/bg-card-4.c21c4d4b.png"
   },
   {
-    "revision": "9d12619d5c0deb86ed60",
-    "url": "/swapi-task/static/js/main.9d12619d.chunk.js"
+    "revision": "f39d00511a56e28f81ec231724e0d0da",
+    "url": "/swapi-task/static/media/back.f39d0051.svg"
   },
   {
     "revision": "b4fea25d5476b89769b2a80d17e15db5",
@@ -42,10 +38,6 @@ self.__precacheManifest = [
   {
     "revision": "ae324be713d1c84674b78fea136ed0c8",
     "url": "/swapi-task/static/media/bg-card-7.ae324be7.png"
-  },
-  {
-    "revision": "cc3019aa6439ef893839b8a0d6d0391d",
-    "url": "/swapi-task/static/media/Starjedi.cc3019aa.ttf"
   },
   {
     "revision": "7b4adbed5cbde8d31112a28341e603b8",
@@ -60,11 +52,11 @@ self.__precacheManifest = [
     "url": "/swapi-task/static/media/loader.1c83b149.svg"
   },
   {
-    "revision": "f39d00511a56e28f81ec231724e0d0da",
-    "url": "/swapi-task/static/media/back.f39d0051.svg"
+    "revision": "af0baf6045a2e308aaf3",
+    "url": "/swapi-task/static/js/1.af0baf60.chunk.js"
   },
   {
-    "revision": "bc79054e9bae2c9fed7360db66c34f66",
+    "revision": "3e37ff394a40829b8af28d4f921b9067",
     "url": "/swapi-task/index.html"
   }
 ];
