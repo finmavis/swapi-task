@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 import styled from 'styled-components';
 
 import { ReactComponent as Logo } from './assets/icon/logo.svg';
@@ -16,10 +16,10 @@ const HeaderStyle = styled.header`
   }
 `;
 
-const Header = props => (
+const Header = memo(props => (
   <HeaderStyle>
     <Logo className='logo' />
   </HeaderStyle>
-);
+));
 
 export default Header;
