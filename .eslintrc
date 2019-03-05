@@ -1,3 +1,23 @@
 {
-  "extends": ["react-app", "plugin:prettier/recommended"]
+  "extends": ["react-app", "plugin:prettier/recommended"],
+  "plugins": [
+    "react-hooks"
+  ],
+  "rules": {
+    "no-console": "warn",
+    "default-case": "error",
+    "no-alert": "warn",
+    "no-dupe-args": "error",
+    "no-dupe-keys": "error",
+    "no-duplicate-imports": "error",
+    "no-unused-expressions": "error",
+    "no-empty": "error",
+    "no-unreachable": "error",
+    "no-unused-vars": "warn",
+    "no-var": "error",
+    "prefer-const": "error",
+    "no-debugger": 1,
+    "no-use-before-define": 2,
+    "react-hooks/rules-of-hooks": "error"
+  }
 }
