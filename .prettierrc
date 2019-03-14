@@ -9,5 +9,6 @@
   "bracketSpacing": true,
   "jsxBracketSameLine": true,
   "arrowParens": "avoid",
-  "parser": "flow"
+  "htmlWhitespaceSensitivity": "ignore",
+  "endOfLine": "lf"
 }
