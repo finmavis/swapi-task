@@ -29,7 +29,7 @@ const GlobalStyle = createGlobalStyle`
     @media screen and (max-width: 48em) {
       font-size: 56.25%;
     }
-    
+
     /* 576px */
     @media screen and (max-width: 36em) {
       font-size: 50%;

@@ -5,7 +5,7 @@ To see this project in action, go to [Demo Star Wars](https://finmavis.github.io
 
 ## Getting Started
 
-Clone this repo : 
+Clone this repo :
 ```git clone https://github.com/finmavis/tmdb-clone.git```
 
 Navigate to the root folder and install all dependencies :
