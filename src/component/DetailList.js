@@ -42,8 +42,8 @@ const DetailList = ({ label, list }) => (
         ))}
       </WrapperList>
     ) : (
-      <p>We don't have any {label} data yet!</p>
-    )}
+        <p>We don't have any {label} data yet!</p>
+      )}
   </WrapperCustom>
 );
 

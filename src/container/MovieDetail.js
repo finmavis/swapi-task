@@ -53,18 +53,18 @@ class Movie extends Component {
         {loading ? (
           <Loader />
         ) : (
-          <Detail
-            title={title}
-            director={director}
-            producer={producer}
-            description={description}
-            characters={characters}
-            planets={planets}
-            species={species}
-            starships={starships}
-            vehicles={vehicles}
-          />
-        )}
+            <Detail
+              title={title}
+              director={director}
+              producer={producer}
+              description={description}
+              characters={characters}
+              planets={planets}
+              species={species}
+              starships={starships}
+              vehicles={vehicles}
+            />
+          )}
       </Container>
     );
   }

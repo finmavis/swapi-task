@@ -27,16 +27,16 @@ const Detail = ({
   starships,
   vehicles,
 }) => (
-  <Wrapper>
-    <DetailHeader title={title} director={director} producer={producer} />
-    <DetailDescription description={description} />
-    <DetailList label='Characters' list={characters} />
-    <DetailList label='Planets' list={planets} />
-    <DetailList label='Species' list={species} />
-    <DetailList label='Starships' list={starships} />
-    <DetailList label='Vehicles' list={vehicles} />
-  </Wrapper>
-);
+    <Wrapper>
+      <DetailHeader title={title} director={director} producer={producer} />
+      <DetailDescription description={description} />
+      <DetailList label='Characters' list={characters} />
+      <DetailList label='Planets' list={planets} />
+      <DetailList label='Species' list={species} />
+      <DetailList label='Starships' list={starships} />
+      <DetailList label='Vehicles' list={vehicles} />
+    </Wrapper>
+  );
 
 Detail.propTypes = {
   title: PropTypes.string,
