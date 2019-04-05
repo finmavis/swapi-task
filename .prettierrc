@@ -7,7 +7,7 @@
   "jsxSingleQuote": true,
   "trailingComma": "all",
   "bracketSpacing": true,
-  "jsxBracketSameLine": true,
+  "jsxBracketSameLine": false,
   "arrowParens": "avoid",
   "htmlWhitespaceSensitivity": "ignore",
   "endOfLine": "lf"
