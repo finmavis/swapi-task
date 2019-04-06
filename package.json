@@ -5,12 +5,12 @@
   "homepage": "https://finmavis.github.io/swapi-task",
   "dependencies": {
     "gh-pages": "^2.0.1",
-    "prop-types": "^15.6.2",
-    "react": "^16.6.3",
-    "react-dom": "^16.6.3",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
     "react-router-dom": "^4.3.1",
-    "react-scripts": "2.1.1",
-    "styled-components": "^4.1.2"
+    "react-scripts": "2.1.8",
+    "styled-components": "^4.2.0"
   },
   "scripts": {
     "start": "react-scripts start",
