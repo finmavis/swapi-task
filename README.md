@@ -1,4 +1,4 @@
-# Star Wars Movie
+# Star Wars Movie / SWAPI API
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). Using API from [SWAPI](https://swapi.co).<br>
 To see this project in action, go to [Demo Star Wars](https://finmavis.github.io/swapi-task)
@@ -6,17 +6,20 @@ To see this project in action, go to [Demo Star Wars](https://finmavis.github.io
 ## Getting Started
 
 Clone this repo :
-```git clone https://github.com/finmavis/swapi-task.git```
+`git clone https://github.com/finmavis/swapi-task.git`
 
 Navigate to the root folder and install all dependencies :
+
 - `yarn` or `npm install`
 
 Start Development Mode :
+
 - `yarn start` or `npm start`
 - Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 - Happy Hacking!
 
 ## Folder Structure
+
 ```
 src/
   component/
@@ -40,6 +43,7 @@ src/
 ## Style Utilities
 
 ### Relative Unit
+
 This project using relative unit based 10px. so you can use `1rem` which means `10px` propeties in css to help ours styling more easier handling Resposive.
 
 ### Grid
@@ -47,6 +51,7 @@ This project using relative unit based 10px. so you can use `1rem` which means `
 This project using Grid System which is using 3 Column because based on Content/Data, we only need 3 Column. This Grid system i made it myself using Flexbox. You can find `Grid` file in `src/component/Grid.js`. This `Grid` system contain `Container`, `Row` and `Col`.<br>
 
 - How to use it
+
   ```
   import { Container, Row, Col } from 'path/to/grid/file';
 
@@ -60,6 +65,7 @@ This project using Grid System which is using 3 Column because based on Content/
   ```
 
   or if you only want to use `Container`, well, you dont have to import `Row` and `Col`. but if you want to use `Col` you must wrap with `Container` and `Row`.
+
   ```
   import { Container, Row, Col } from 'path/to/grid/file';
 
@@ -68,8 +74,7 @@ This project using Grid System which is using 3 Column because based on Content/
   <Container>
   ```
 
-
-- Custom Grid<br>
+* Custom Grid<br>
   Also you can modify `Container`, `Row` or `Col` to achieve something that this `Grid` cannot do, or you want to add some value or edit some value.
 
   ```
@@ -89,30 +94,30 @@ This project using Grid System which is using 3 Column because based on Content/
   <Container>
   ```
 
-
 ### Media Queries
 
-  #### Relative Unit
-  State | Properties
-  ------------ | -------------
-  Default | 1rem = 10px
-  max-width 768px | 1rem = 9px
-  max-width 576px | 1rem = 8px
+#### Relative Unit
 
-  #### Container
+| State           | Properties  |
+| --------------- | ----------- |
+| Default         | 1rem = 10px |
+| max-width 768px | 1rem = 9px  |
+| max-width 576px | 1rem = 8px  |
 
-  State | Properties
-  ------------ | -------------
-  Default | width = 100%
-  min-width 576px | width = 540px
-  min-width 768px | width = 720px
-  min-width 992px | width = 960px
-  min-width 1200px | width = 1140px
+#### Container
 
-  #### Column
+| State            | Properties     |
+| ---------------- | -------------- |
+| Default          | width = 100%   |
+| min-width 576px  | width = 540px  |
+| min-width 768px  | width = 720px  |
+| min-width 992px  | width = 960px  |
+| min-width 1200px | width = 1140px |
 
-  State | Numbers of Column in Row
-  ------------ | -------------
-  Default | 1
-  min-width 768px | 2
-  min-width 992px | 3
+#### Column
+
+| State           | Numbers of Column in Row |
+| --------------- | ------------------------ |
+| Default         | 1                        |
+| min-width 768px | 2                        |
+| min-width 992px | 3                        |
