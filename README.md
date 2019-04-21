@@ -23,22 +23,22 @@ Start Development Mode :
 ```
 src/
   component/
+  container/
+  shared/
     assets/
       images/
+    helpers/
     styles/
-  container/
-  helpers/
   App.js
-  App.test.js
-  index.css
   index.js
+  serviceWorker.js
 ```
 
 - `component` : Folder to put Stateless Component
-  - `assets` : Folder to put assets like images
-  - `styles` : Folder to put our Styled Component that reusable
-- `contaner` : Folder to put our Statefull Component
+- `container` : Folder to put our Statefull Component
+- `assets` : Folder to put assets like images
 - `helpers` : Folder to put our helpers function like Consume API and formating data or others helpers
+- `styles` : Folder to put our Styled Component that reusable
 
 ## Style Utilities
 
