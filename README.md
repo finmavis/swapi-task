@@ -21,22 +21,24 @@ Start Development Mode :
 ## Folder Structure
 
 ```
-src/
-  component/
-  container/
-  shared/
-    assets/
-      images/
-    helpers/
-    styles/
-  App.js
-  index.js
-  serviceWorker.js
+|-- src/
+    |-- component/
+    |-- container/
+    |-- shared/
+        |-- assets/
+            |-- fonts
+            |-- icons
+            |-- images/
+        |-- helpers/
+        |-- styles/
+    |-- App.js
+    |-- index.js
+    |-- serviceWorker.js
 ```
 
 - `component` : Folder to put Stateless Component
 - `container` : Folder to put our Statefull Component
-- `assets` : Folder to put assets like images
+- `assets` : Folder to put assets like fonts, icons and images
 - `helpers` : Folder to put our helpers function like Consume API and formating data or others helpers
 - `styles` : Folder to put our Styled Component that reusable
 
