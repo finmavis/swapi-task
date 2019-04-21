@@ -1,10 +1,15 @@
+// Dependencies core
 import React, { Component } from 'react';
 
-import { Container, Row } from '../component/styles/Grid';
+// Component
 import MovieItem from '../component/MovieItem';
-import Loader from '../component/styles/Loader';
 
-import { getAllMovie } from '../helpers/api';
+// Styles
+import { Container, Row } from '../shared/styles/Grid';
+import Loader from '../shared/styles/Loader';
+
+// Helper
+import { getAllMovie } from '../shared/helpers/api';
 
 class MovieList extends Component {
   state = {

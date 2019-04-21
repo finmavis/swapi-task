@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
-import formatDate from '../helpers/formatDate';
+import formatDate from '../shared/helpers/formatDate';
 
 const MovieHeaderStyle = styled.div`
   display: flex;

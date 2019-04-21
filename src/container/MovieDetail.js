@@ -1,10 +1,15 @@
+// Dependencies core
 import React, { Component } from 'react';
 
-import { Container } from '../component/styles/Grid';
+// Component
 import Detail from '../component/Detail';
-import Loader from '../component/styles/Loader';
 
-import { getSingleMovie } from '../helpers/api';
+// Styles
+import { Container } from '../shared/styles/Grid';
+import Loader from '../shared/styles/Loader';
+
+// Helper
+import { getSingleMovie } from '../shared/helpers/api';
 
 class Movie extends Component {
   state = {

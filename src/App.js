@@ -5,7 +5,7 @@ import Header from './component/Header';
 import MovieList from './container/MovieList';
 import MovieDetail from './container/MovieDetail';
 
-import GlobalStyle from './component/styles/Global';
+import GlobalStyle from './shared/styles/Global';
 
 class App extends Component {
   render() {

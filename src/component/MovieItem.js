@@ -1,20 +1,24 @@
+// Dependencies core
 import React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
+// Components
 import MovieHeader from './MovieHeader';
 import MovieDescription from './MovieDescription';
 import MovieLink from './MovieLink';
 
-import { Col } from './styles/Grid';
+// Styles
+import { Col } from '../shared/styles/Grid';
 
-import bgCardOne from './assets/images/bg-card-1.png';
-import bgCardTwo from './assets/images/bg-card-2.png';
-import bgCardThree from './assets/images/bg-card-3.png';
-import bgCardFour from './assets/images/bg-card-4.png';
-import bgCardFive from './assets/images/bg-card-5.png';
-import bgCardSix from './assets/images/bg-card-6.png';
-import bgCardSeven from './assets/images/bg-card-7.png';
+// Assets
+import bgCardOne from '../shared/assets/images/bg-card-1.png';
+import bgCardTwo from '../shared/assets/images/bg-card-2.png';
+import bgCardThree from '../shared/assets/images/bg-card-3.png';
+import bgCardFour from '../shared/assets/images/bg-card-4.png';
+import bgCardFive from '../shared/assets/images/bg-card-5.png';
+import bgCardSix from '../shared/assets/images/bg-card-6.png';
+import bgCardSeven from '../shared/assets/images/bg-card-7.png';
 
 const ColCustom = styled(Col)`
   &:nth-child(1) > * {

@@ -1,8 +1,10 @@
+// Dependencies core
 import React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
-import { Wrapper, Label } from './styles/Detail';
+// Styles
+import { Wrapper, Label } from '../shared/styles/Detail';
 
 const WrapperCustom = styled(Wrapper)`
   padding-top: 3rem;

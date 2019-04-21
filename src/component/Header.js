@@ -1,7 +1,9 @@
+// Dependencies core
 import React, { memo } from 'react';
 import styled from 'styled-components';
 
-import { ReactComponent as Logo } from './assets/icon/logo.svg';
+// Assets
+import { ReactComponent as Logo } from '../shared/assets/icon/logo.svg';
 
 const HeaderStyle = styled.header`
   display: flex;

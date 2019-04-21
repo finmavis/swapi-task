@@ -1,7 +1,9 @@
+// Dependencies
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { Wrapper, Label, Text } from './styles/Detail';
+// Styles
+import { Wrapper, Label, Text } from '../shared/styles/Detail';
 
 const DetailDescription = ({ description }) => (
   <Wrapper>
