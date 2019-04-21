@@ -33,16 +33,16 @@ class MovieList extends Component {
           {loading ? (
             <Loader />
           ) : (
-              movieList.map(movie => (
-                <MovieItem
-                  key={movie.id}
-                  id={movie.id}
-                  description={movie.description}
-                  releaseDate={movie.releaseDate}
-                  title={movie.title}
-                />
-              ))
-            )}
+            movieList.map(movie => (
+              <MovieItem
+                key={movie.id}
+                id={movie.id}
+                description={movie.description}
+                releaseDate={movie.releaseDate}
+                title={movie.title}
+              />
+            ))
+          )}
         </Row>
       </Container>
     );
