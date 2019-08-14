@@ -4,7 +4,6 @@
   "private": true,
   "homepage": "https://finmavis.github.io/swapi-task",
   "dependencies": {
-    "gh-pages": "^2.1.1",
     "prop-types": "^15.7.2",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
@@ -36,8 +35,12 @@
     ]
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^4.0.0",
+    "@testing-library/react": "^9.1.1",
+    "@types/jest": "^24.0.17",
     "eslint-config-prettier": "^6.0.0",
     "eslint-plugin-prettier": "^3.1.0",
+    "gh-pages": "^2.1.1",
     "prettier": "^1.18.2"
   }
 }
