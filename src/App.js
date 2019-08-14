@@ -1,11 +1,13 @@
 import React, { Component, Fragment } from 'react';
 import { Switch, Route, withRouter } from 'react-router-dom';
+import loadable from '@loadable/component';
 
 import Header from './component/Header';
-import MovieList from './container/MovieList';
-import MovieDetail from './container/MovieDetail';
 
 import GlobalStyle from './shared/styles/Global';
+
+const MovieList = loadable(() => import('./container/MovieList'));
+const MovieDetail = loadable(() => import('./container/MovieDetail'));
 
 class App extends Component {
   render() {
