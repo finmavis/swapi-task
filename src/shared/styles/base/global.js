@@ -11,6 +11,7 @@ const GlobalStyle = createGlobalStyle`
     font-weight: 400;
     src: local('Star Jedi'), local('StarJedi'),
       url('../component/assets/fonts/Starjedi.ttf') format('truetype');
+    display: swap;
   }
 
   *,
