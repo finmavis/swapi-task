@@ -16,6 +16,8 @@ const Wrapper = styled.section`
   padding: 3rem;
 `;
 
+const boo = false;
+
 const Detail = ({
   title,
   director,
