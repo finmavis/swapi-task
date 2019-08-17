@@ -1,14 +1,14 @@
-// Dependencies core
+// Import all Dependencies
 import React from 'react';
 
-// Component
-import Detail from '../../component/Detail';
+// Import all Component
+import MovieDetailContent from './MovieDetailContent';
 
-// Styles
-import { Container } from '../../shared/styles/Grid';
-import Loader from '../../shared/styles/Loader';
+// Import all Styles
+import { Container } from '../../shared/styles/base/grid';
+import Loader from '../../shared/components/Loader/Loader';
 
-// Import Hooks
+// Import all Hooks
 import useMovieDetail from '../../shared/hooks/useMovieDetail';
 
 export default function MovieDetail(props) {
@@ -19,7 +19,7 @@ export default function MovieDetail(props) {
       {loading ? (
         <Loader />
       ) : (
-        <Detail
+        <MovieDetailContent
           title={movieDetail.title}
           director={movieDetail.director}
           producer={movieDetail.producer}

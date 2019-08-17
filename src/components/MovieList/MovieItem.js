@@ -9,7 +9,7 @@ import MovieDescription from './MovieDescription';
 import MovieLink from './MovieLink';
 
 // Import all Styles
-import { Col } from '../../shared/styles/Grid';
+import { Col } from '../../shared/styles/base/grid';
 
 // Import all Assets
 import bgCardOne from '../../shared/assets/images/bg-card-1.png';

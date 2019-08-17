@@ -1,8 +1,8 @@
 import { createGlobalStyle } from 'styled-components';
 
-import { COLOR_WHITE, COLOR_BACKGROUND } from '../styles/themes/colors';
+import { COLOR_WHITE, COLOR_BACKGROUND } from '../themes/colors';
 
-import Background from '../assets/images/background.png';
+import Background from '../../assets/images/background.png';
 
 const GlobalStyle = createGlobalStyle`
   @font-face {

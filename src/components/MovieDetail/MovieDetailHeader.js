@@ -1,18 +1,18 @@
-// Dependencies core
+// Import all Dependencies
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
-// Assets
-import { ReactComponent as BackLogo } from '../shared/assets/icon/back.svg';
+// Import all Themes
+import { COLOR_WHITE, COLOR_GRAY } from '../../shared/styles/themes/colors';
 
 const Header = styled.header`
   display: flex;
   align-items: center;
   flex-direction: column;
   width: 100%;
-  color: #fff;
+  color: ${COLOR_WHITE};
   margin-bottom: 3rem;
   text-align: center;
 `;
@@ -24,16 +24,9 @@ const Back = styled.div`
   a {
     font-family: inherit;
     font-size: 1.6rem;
-    color: #9d9d9d;
-    text-decoration: none;
+    color: ${COLOR_GRAY};
     display: flex;
     align-items: center;
-  }
-
-  svg {
-    fill: #9d9d9d;
-    width: 1.6rem;
-    height: 1.6rem;
   }
 `;
 
@@ -52,24 +45,21 @@ const Team = styled.p`
   }
 `;
 
-const DetailHeader = ({ title, director, producer }) => (
-  <Header>
-    <Back>
-      <Link to='/'>
-        <BackLogo />
-        &ensp;Back to list
-      </Link>
-    </Back>
-    <Title>{title}</Title>
-    <Team>Director : {director}</Team>
-    <Team>Producer : {producer}</Team>
-  </Header>
-);
+export default function MovieDetailHeader({ title, director, producer }) {
+  return (
+    <Header>
+      <Back>
+        <Link to='/'>&larr; Back to list</Link>
+      </Back>
+      <Title>{title}</Title>
+      <Team>Director : {director}</Team>
+      <Team>Producer : {producer}</Team>
+    </Header>
+  );
+}
 
-DetailHeader.propTypes = {
+MovieDetailHeader.propTypes = {
   title: PropTypes.string,
   director: PropTypes.string,
   producer: PropTypes.string,
 };
-
-export default DetailHeader;

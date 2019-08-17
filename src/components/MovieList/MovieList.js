@@ -5,8 +5,8 @@ import React from 'react';
 import MovieItem from './MovieItem';
 
 // Imprort all Styles
-import { Container, Row } from '../../shared/styles/Grid';
-import Loader from '../../shared/styles/Loader';
+import { Container, Row } from '../../shared/styles/base/grid';
+import Loader from '../../shared/components/Loader/Loader';
 
 // Import all hooks
 import useMovieList from '../../shared/hooks/useMovieList';
