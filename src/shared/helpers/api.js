@@ -1,5 +1,7 @@
+import { API_URL } from '../constants/api.constant';
+
 export const getAllMovie = async () => {
-  const res = await fetch('https://swapi.co/api/films');
+  const res = await fetch(API_URL);
   const resJson = await res.json();
   const editedMovieList = resJson.results.map(movie => ({
     id: parseFloat(movie.url.slice(27, 28)),
@@ -11,7 +13,7 @@ export const getAllMovie = async () => {
 };
 
 export const getSingleMovie = async id => {
-  const res = await fetch(`https://swapi.co/api/films/${id}`);
+  const res = await fetch(`${API_URL}/${id}`);
   const resJson = await res.json();
   const resCharacters = resJson.characters.map(url =>
     fetch(url)

@@ -1,10 +1,10 @@
 import { createGlobalStyle } from 'styled-components';
 
+import { COLOR_WHITE, COLOR_BACKGROUND } from '../styles/themes/colors';
+
 import Background from '../assets/images/background.png';
 
 const GlobalStyle = createGlobalStyle`
-  @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
-
   @font-face {
     font-family: 'Star Jedi';
     font-style: normal;
@@ -40,8 +40,8 @@ const GlobalStyle = createGlobalStyle`
     font-family: 'Open Sans', sans-serif;
     font-size: 1.6rem;
     overflow-y: scroll;
-    color: #fff;
-    background-color: #232323;
+    color: ${COLOR_WHITE};
+    background-color: ${COLOR_BACKGROUND};
   }
 
   #root {
@@ -49,6 +49,15 @@ const GlobalStyle = createGlobalStyle`
     background-size: contain;
     min-height: 100vh;
     padding-bottom: 2rem;
+  }
+
+  a,
+  a:link,
+  a:hover,
+  a:focus {
+    color: currentColor;
+    text-decoration: none;
+    cursor: pointer;
   }
 `;
 

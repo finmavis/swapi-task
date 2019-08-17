@@ -1,9 +1,20 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 
 import { ReactComponent as LoaderLogo } from '../assets/icon/loader.svg';
 
-const Wrapper = styled.div`
+import { COLOR_YELLOW } from './themes/colors';
+
+const loaderSpin = keyframes`
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+`;
+
+const LoaderStyle = styled.div`
   width: 100%;
   display: flex;
   justify-content: center;
@@ -11,25 +22,16 @@ const Wrapper = styled.div`
   min-height: 70vh;
 
   .loader-logo {
-    animation: loader-spin infinite 2.5s linear;
+    animation: ${loaderSpin} infinite 2.5s linear;
     height: 8rem;
-    fill: #ffe81f;
-  }
-
-  @keyframes loader-spin {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
+    fill: ${COLOR_YELLOW};
   }
 `;
 
 const Loader = props => (
-  <Wrapper>
+  <LoaderStyle>
     <LoaderLogo className='loader-logo' />
-  </Wrapper>
+  </LoaderStyle>
 );
 
 export default Loader;
