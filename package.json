@@ -20,6 +20,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "eslint src/**/*.js",
+    "lint:fix": "npm run lint -- --fix",
     "prettier": "prettier \"**/*.+(js|jsx|json|css|scss|md|mdx)\"",
     "format": "npm run prettier -- --write",
     "validate": "npm run lint && npm run prettier -- --list-different"
@@ -33,16 +34,14 @@
     }
   },
   "lint-staged": {
-    "linter": {
-      "*.js": [
-        "npm run lint -- --fix",
-        "git add"
-      ],
-      "**/*.+(js|jsx|json|css|scss|md|mdx)": [
-        "npm run format",
-        "git add"
-      ]
-    }
+    "*.+(js|jsx)": [
+      "npm run lint:fix",
+      "git add"
+    ],
+    "**/*.+(js|jsx|json|css|scss|md|mdx)": [
+      "npm run format",
+      "git add"
+    ]
   },
   "browserslist": {
     "production": [
