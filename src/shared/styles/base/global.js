@@ -1,8 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 
-import { COLOR_WHITE, COLOR_BACKGROUND } from '../themes/colors';
-
-import Background from '../../assets/images/background.png';
+import { COLOR_WHITE, COLOR_BLACK } from '../themes/colors';
 
 const GlobalStyle = createGlobalStyle`
   @font-face {
@@ -42,13 +40,7 @@ const GlobalStyle = createGlobalStyle`
     font-size: 1.6rem;
     overflow-y: scroll;
     color: ${COLOR_WHITE};
-    background-color: ${COLOR_BACKGROUND};
-  }
-
-  #root {
-    background: url(${Background});
-    background-size: contain;
-    min-height: 100vh;
+    background-color: ${COLOR_BLACK};
     padding-bottom: 2rem;
   }
 
