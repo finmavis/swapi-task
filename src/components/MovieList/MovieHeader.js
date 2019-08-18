@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
 // Import all Helpers
-import formatDate from '../../shared/helpers/format-date';
+import { formatDate } from '../../shared/helpers/format-date';
 
 // Import all Themes
 import { COLOR_GRAY } from '../../shared/styles/themes/colors';
