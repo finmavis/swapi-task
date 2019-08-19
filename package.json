@@ -22,7 +22,7 @@
     "lint": "eslint src/**/*.js",
     "lint:fix": "npm run lint -- --fix",
     "prettier": "prettier \"**/*.+(js|jsx|json|css|scss|md|mdx)\"",
-    "format": "npm run prettier -- --write",
+    "prettier:fix": "npm run prettier -- --write",
     "validate": "npm run lint && npm run prettier -- --list-different"
   },
   "eslintConfig": {
@@ -34,12 +34,12 @@
     }
   },
   "lint-staged": {
-    "*.+(js|jsx)": [
+    "src/**/*.{js,jsx}": [
       "npm run lint:fix",
       "git add"
     ],
-    "**/*.+(js|jsx|json|css|scss|md|mdx)": [
-      "npm run format",
+    "src/**/*.{js,jsx,json,css,scss,md,mdx}": [
+      "npm run prettier:fix",
       "git add"
     ]
   },
