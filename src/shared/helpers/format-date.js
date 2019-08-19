@@ -1,8 +1,11 @@
 import { MONTH_NAMES } from '../constants/month-name.constant';
 
 export function formatDate(date) {
-  const [year, month, day] = date.split('-');
+  if (!date) {
+    throw new Error('Missing required parameter');
+  }
 
+  const [year, month, day] = date.split('-');
   if (
     !year ||
     !month ||
@@ -11,9 +14,7 @@ export function formatDate(date) {
     parseInt(month) < 1 ||
     parseInt(month) > 12
   ) {
-    throw new Error(
-      'formatDate arguments must be called with YYYY-MM-DD format',
-    );
+    throw new Error('Parameter format must be YYYY-MM-DD');
   }
   return `${MONTH_NAMES[month - 1]} ${day}, ${year}`;
 }
