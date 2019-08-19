@@ -21,7 +21,7 @@
     "eject": "react-scripts eject",
     "lint": "eslint src/**/*.js",
     "lint:fix": "npm run lint -- --fix",
-    "prettier": "prettier \"**/*.+(js|jsx|json|css|scss|md|mdx)\"",
+    "prettier": "prettier \"src/**/*.{js,jsx,json,css,scss,md,mdx}\"",
     "prettier:fix": "npm run prettier -- --write",
     "validate": "npm run lint && npm run prettier -- --list-different"
   },
