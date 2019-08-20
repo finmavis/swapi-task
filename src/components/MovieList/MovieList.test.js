@@ -1,6 +1,6 @@
 import React from 'react';
 import { MemoryRouter as Router } from 'react-router-dom';
-import { render, getByText } from '@testing-library/react';
+import { render } from '@testing-library/react';
 
 import MovieList from './MovieList';
 
