@@ -22,14 +22,14 @@ describe('<MovieList />', () => {
     });
 
     // Render
-    const { container } = render(
+    const { getByTestId } = render(
       <Router>
         <MovieList />
       </Router>,
     );
 
     // Assert
-    expect(container.querySelector('svg')).toBeInTheDocument();
+    expect(getByTestId(/loader/i)).toBeInTheDocument();
   });
 
   it('Should render Movie List properly', () => {

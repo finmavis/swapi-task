@@ -25,13 +25,13 @@ describe('<MovieDetail />', () => {
         loading: true,
       };
     });
-    const { container } = render(
+    const { getByTestId } = render(
       <Router>
         <MovieDetail match={mockMatch} />
       </Router>,
     );
 
-    expect(container.querySelector('svg')).toBeInTheDocument();
+    expect(getByTestId(/loader/i)).toBeInTheDocument();
   });
 
   it('Should render Movie Detail properly', () => {
