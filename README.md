@@ -67,7 +67,7 @@ To format or prettier codebase using `Prettier`.
 
 ```
 |-- src/
-    |-- component/
+    |-- components/
     |-- shared/
         |-- assets/
             |-- fonts/
