@@ -1,22 +1,23 @@
 {
   "files": {
-    "static/js/0.6187f09a.chunk.js": "/swapi-task/static/js/0.6187f09a.chunk.js",
-    "static/js/0.6187f09a.chunk.js.map": "/swapi-task/static/js/0.6187f09a.chunk.js.map",
-    "main.js": "/swapi-task/static/js/main.d389ad44.chunk.js",
-    "main.js.map": "/swapi-task/static/js/main.d389ad44.chunk.js.map",
-    "runtime~main.js": "/swapi-task/static/js/runtime~main.83f24a93.js",
-    "runtime~main.js.map": "/swapi-task/static/js/runtime~main.83f24a93.js.map",
-    "static/js/3.b8de5877.chunk.js": "/swapi-task/static/js/3.b8de5877.chunk.js",
-    "static/js/3.b8de5877.chunk.js.map": "/swapi-task/static/js/3.b8de5877.chunk.js.map",
-    "static/js/4.acb3d842.chunk.js": "/swapi-task/static/js/4.acb3d842.chunk.js",
-    "static/js/4.acb3d842.chunk.js.map": "/swapi-task/static/js/4.acb3d842.chunk.js.map",
-    "static/js/5.556acf7b.chunk.js": "/swapi-task/static/js/5.556acf7b.chunk.js",
-    "static/js/5.556acf7b.chunk.js.map": "/swapi-task/static/js/5.556acf7b.chunk.js.map",
-    "static/js/6.f8b652d1.chunk.js": "/swapi-task/static/js/6.f8b652d1.chunk.js",
-    "static/js/6.f8b652d1.chunk.js.map": "/swapi-task/static/js/6.f8b652d1.chunk.js.map",
+    "static/js/0.2b5c8ff5.chunk.js": "/swapi-task/static/js/0.2b5c8ff5.chunk.js",
+    "static/js/0.2b5c8ff5.chunk.js.map": "/swapi-task/static/js/0.2b5c8ff5.chunk.js.map",
+    "main.js": "/swapi-task/static/js/main.dd089865.chunk.js",
+    "main.js.map": "/swapi-task/static/js/main.dd089865.chunk.js.map",
+    "runtime-main.js": "/swapi-task/static/js/runtime-main.c481dbdd.js",
+    "runtime-main.js.map": "/swapi-task/static/js/runtime-main.c481dbdd.js.map",
+    "static/js/3.1217ef09.chunk.js": "/swapi-task/static/js/3.1217ef09.chunk.js",
+    "static/js/3.1217ef09.chunk.js.map": "/swapi-task/static/js/3.1217ef09.chunk.js.map",
+    "static/js/4.f6a9550d.chunk.js": "/swapi-task/static/js/4.f6a9550d.chunk.js",
+    "static/js/4.f6a9550d.chunk.js.map": "/swapi-task/static/js/4.f6a9550d.chunk.js.map",
+    "static/js/5.0d7e61fa.chunk.js": "/swapi-task/static/js/5.0d7e61fa.chunk.js",
+    "static/js/5.0d7e61fa.chunk.js.map": "/swapi-task/static/js/5.0d7e61fa.chunk.js.map",
+    "static/js/6.cc76441f.chunk.js": "/swapi-task/static/js/6.cc76441f.chunk.js",
+    "static/js/6.cc76441f.chunk.js.map": "/swapi-task/static/js/6.cc76441f.chunk.js.map",
     "index.html": "/swapi-task/index.html",
-    "precache-manifest.4c47a10ebad47bf309668d3bac2c1264.js": "/swapi-task/precache-manifest.4c47a10ebad47bf309668d3bac2c1264.js",
+    "precache-manifest.ca1ef1a0dc5eed3a961df0bde75b53bb.js": "/swapi-task/precache-manifest.ca1ef1a0dc5eed3a961df0bde75b53bb.js",
     "service-worker.js": "/swapi-task/service-worker.js",
+    "static/js/3.1217ef09.chunk.js.LICENSE.txt": "/swapi-task/static/js/3.1217ef09.chunk.js.LICENSE.txt",
     "static/media/bg-card-1.png": "/swapi-task/static/media/bg-card-1.0c96fd00.png",
     "static/media/bg-card-2.png": "/swapi-task/static/media/bg-card-2.b0a7b209.png",
     "static/media/bg-card-3.png": "/swapi-task/static/media/bg-card-3.1914d853.png",
@@ -26,5 +27,10 @@
     "static/media/bg-card-7.png": "/swapi-task/static/media/bg-card-7.ae324be7.png",
     "static/media/loader.1c83b149.svg": "/swapi-task/static/media/loader.1c83b149.svg",
     "static/media/logo.640c566f.svg": "/swapi-task/static/media/logo.640c566f.svg"
-  }
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c481dbdd.js",
+    "static/js/3.1217ef09.chunk.js",
+    "static/js/main.dd089865.chunk.js"
+  ]
 }

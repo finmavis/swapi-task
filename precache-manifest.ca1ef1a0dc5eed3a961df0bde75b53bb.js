@@ -1,35 +1,39 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1d992c86b0ead6dda3bcc8a06224f039",
+    "revision": "4f7b2a1ed9a7c8b8bfaf7ed2e7ac2d71",
     "url": "/swapi-task/index.html"
   },
   {
-    "revision": "a6ee4fbb6aa9f319db24",
-    "url": "/swapi-task/static/js/0.6187f09a.chunk.js"
+    "revision": "de998c09d28b5a583357",
+    "url": "/swapi-task/static/js/0.2b5c8ff5.chunk.js"
   },
   {
-    "revision": "8bfb9f773988fb45541a",
-    "url": "/swapi-task/static/js/3.b8de5877.chunk.js"
+    "revision": "6d9af9a8a91966ee28bb",
+    "url": "/swapi-task/static/js/3.1217ef09.chunk.js"
   },
   {
-    "revision": "c9198fe34b9e2e98ddaa",
-    "url": "/swapi-task/static/js/4.acb3d842.chunk.js"
+    "revision": "216e537bacc64f9dbaabd26649a9ab95",
+    "url": "/swapi-task/static/js/3.1217ef09.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "3c483e22ab029dc94232",
-    "url": "/swapi-task/static/js/5.556acf7b.chunk.js"
+    "revision": "0dcaaca7566ffe420bf4",
+    "url": "/swapi-task/static/js/4.f6a9550d.chunk.js"
   },
   {
-    "revision": "832d25cafc414f14228f",
-    "url": "/swapi-task/static/js/6.f8b652d1.chunk.js"
+    "revision": "568974a8338512ae7e64",
+    "url": "/swapi-task/static/js/5.0d7e61fa.chunk.js"
   },
   {
-    "revision": "ccfe2fb606bc9d0de78d",
-    "url": "/swapi-task/static/js/main.d389ad44.chunk.js"
+    "revision": "a3aad8763125c8d11863",
+    "url": "/swapi-task/static/js/6.cc76441f.chunk.js"
   },
   {
-    "revision": "820003f83c41910e640c",
-    "url": "/swapi-task/static/js/runtime~main.83f24a93.js"
+    "revision": "f22e5567325d132fa091",
+    "url": "/swapi-task/static/js/main.dd089865.chunk.js"
+  },
+  {
+    "revision": "96b35efe0242952b8d07",
+    "url": "/swapi-task/static/js/runtime-main.c481dbdd.js"
   },
   {
     "revision": "0c96fd009555510812470ee56421d72a",
