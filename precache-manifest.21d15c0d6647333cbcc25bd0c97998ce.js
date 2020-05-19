@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4f7b2a1ed9a7c8b8bfaf7ed2e7ac2d71",
+    "revision": "de8bd01d685ced6fdfc58bfa5ed83889",
     "url": "/swapi-task/index.html"
   },
   {
@@ -28,8 +28,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/swapi-task/static/js/6.cc76441f.chunk.js"
   },
   {
-    "revision": "f22e5567325d132fa091",
-    "url": "/swapi-task/static/js/main.dd089865.chunk.js"
+    "revision": "2709f93ab758ed604957",
+    "url": "/swapi-task/static/js/main.76860572.chunk.js"
   },
   {
     "revision": "96b35efe0242952b8d07",
