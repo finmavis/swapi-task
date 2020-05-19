@@ -25,7 +25,7 @@ describe('<MovieList />', () => {
     const { getByTestId } = render(
       <Router>
         <MovieList />
-      </Router>,
+      </Router>
     );
 
     // Assert
@@ -64,7 +64,7 @@ describe('<MovieList />', () => {
     const { getAllByText, getByText } = render(
       <Router>
         <MovieList />
-      </Router>,
+      </Router>
     );
 
     // Assert

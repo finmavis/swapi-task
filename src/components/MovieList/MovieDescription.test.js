@@ -6,7 +6,7 @@ import MovieDescription from './MovieDescription';
 describe('<MovieDescription />', () => {
   it('Should render properly', () => {
     const { getByText } = render(
-      <MovieDescription description='Movie Description' />,
+      <MovieDescription description='Movie Description' />
     );
     expect(getByText(/movie description.../i)).toBeInTheDocument();
   });

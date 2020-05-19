@@ -14,7 +14,7 @@ describe('<MovieItem />', () => {
           description='Movie description'
           releaseDate='2010-10-09'
         />
-      </Router>,
+      </Router>
     );
 
     expect(getByText(/movie title/i)).toBeInTheDocument();

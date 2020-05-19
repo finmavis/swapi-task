@@ -13,7 +13,7 @@ describe('<MovieDetailHeader />', () => {
           director='John Doe'
           producer='Jonny Stark'
         />
-      </Router>,
+      </Router>
     );
 
     expect(getByText(/back/i)).toHaveAttribute('href', '/');

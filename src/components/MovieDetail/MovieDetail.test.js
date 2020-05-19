@@ -28,7 +28,7 @@ describe('<MovieDetail />', () => {
     const { getByTestId } = render(
       <Router>
         <MovieDetail match={mockMatch} />
-      </Router>,
+      </Router>
     );
 
     expect(getByTestId(/loader/i)).toBeInTheDocument();
@@ -51,7 +51,7 @@ describe('<MovieDetail />', () => {
     const { getByText } = render(
       <Router>
         <MovieDetail match={mockMatch} />
-      </Router>,
+      </Router>
     );
 
     expect(getByText(/something title/i)).toBeInTheDocument();
@@ -62,7 +62,7 @@ describe('<MovieDetail />', () => {
     expect(getByText(/ea-45/i)).toBeInTheDocument();
     expect(getByText(/cat/i)).toBeInTheDocument();
     expect(
-      getByText(/we don't have any starships data yet!/i),
+      getByText(/we don't have any starships data yet!/i)
     ).toBeInTheDocument();
     expect(getByText(/car/i)).toBeInTheDocument();
   });

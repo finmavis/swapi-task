@@ -11,7 +11,7 @@ describe('<MovieDetailContent />', () => {
     const { getByText } = render(
       <Router>
         <MovieDetailContent {...MOVIE_DETAIL_MOCK_DATA} />
-      </Router>,
+      </Router>
     );
 
     expect(getByText(/something title/i)).toBeInTheDocument();
@@ -22,7 +22,7 @@ describe('<MovieDetailContent />', () => {
     expect(getByText(/ea-45/i)).toBeInTheDocument();
     expect(getByText(/cat/i)).toBeInTheDocument();
     expect(
-      getByText(/we don't have any starships data yet!/i),
+      getByText(/we don't have any starships data yet!/i)
     ).toBeInTheDocument();
     expect(getByText(/car/i)).toBeInTheDocument();
   });

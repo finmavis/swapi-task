@@ -11,7 +11,7 @@ import Loader from '../../shared/components/Loader/Loader';
 // Import all hooks
 import useMovieList from '../../shared/hooks/useMovieList';
 
-export default function MovieList(props) {
+export default function MovieList() {
   const { loading, movieList } = useMovieList();
 
   return (
@@ -20,7 +20,7 @@ export default function MovieList(props) {
         {loading ? (
           <Loader />
         ) : (
-          movieList.map(movie => (
+          movieList.map((movie) => (
             <MovieItem
               key={movie.id}
               id={movie.id}

@@ -1,5 +1,10 @@
 {
-  "extends": ["react-app", "plugin:prettier/recommended"],
+  "extends": [
+    "react-app",
+    "plugin:prettier/recommended",
+    "plugin:testing-library/react",
+    "plugin:jest-dom/recommended"
+  ],
   "env": {
     "browser": true,
     "node": true,
@@ -12,14 +17,11 @@
     "no-dupe-args": "error",
     "no-dupe-keys": "error",
     "no-duplicate-imports": "error",
-    "no-unused-expressions": "error",
     "no-empty": "error",
     "no-unreachable": "error",
-    "no-unused-vars": "warn",
     "no-var": "error",
     "prefer-const": "error",
-    "no-debugger": "warn",
-    "no-use-before-define": "error",
+    "no-debugger": "error",
     "no-await-in-loop": "error",
     "no-param-reassign": [
       "error",

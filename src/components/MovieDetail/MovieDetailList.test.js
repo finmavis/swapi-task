@@ -6,7 +6,7 @@ import MovieDetailList from './MovieDetailList';
 describe('<MovieDetailList />', () => {
   it('Should render list if have any list data', () => {
     const { getByText } = render(
-      <MovieDetailList label='Lucky Number' list={['One', 'Two', 'Three']} />,
+      <MovieDetailList label='Lucky Number' list={['One', 'Two', 'Three']} />
     );
 
     expect(getByText(/lucky number/i)).toBeInTheDocument();
@@ -17,12 +17,12 @@ describe('<MovieDetailList />', () => {
 
   it("Should render no data text if there's no data", () => {
     const { getByText, getAllByText } = render(
-      <MovieDetailList label='Planets' list={[]} />,
+      <MovieDetailList label='Planets' list={[]} />
     );
 
     expect(getAllByText(/planets/i)).toHaveLength(2);
     expect(
-      getByText(/We don't have any planets data yet!/i),
+      getByText(/We don't have any planets data yet!/i)
     ).toBeInTheDocument();
   });
 });

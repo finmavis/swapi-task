@@ -18,7 +18,7 @@ describe('<MovieHeader />', () => {
     const { getByText } = render(
       <Router>
         <MovieHeader id={1} title='Movie Title' releaseDate='2010-10-20' />
-      </Router>,
+      </Router>
     );
 
     // Assert

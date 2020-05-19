@@ -3,7 +3,7 @@ import { API_URL } from '../constants/api.constant';
 export const getAllMovie = async () => {
   const res = await fetch(API_URL);
   const resJson = await res.json();
-  const editedMovieList = resJson.results.map(movie => ({
+  const editedMovieList = resJson.results.map((movie) => ({
     id: parseFloat(movie.url.slice(27, 28)),
     title: movie.title,
     description: movie.opening_crawl,
@@ -12,33 +12,33 @@ export const getAllMovie = async () => {
   return editedMovieList;
 };
 
-export const getSingleMovie = async id => {
+export const getSingleMovie = async (id) => {
   const res = await fetch(`${API_URL}/${id}`);
   const resJson = await res.json();
-  const resCharacters = resJson.characters.map(url =>
+  const resCharacters = resJson.characters.map((url) =>
     fetch(url)
-      .then(data => data.json())
-      .then(c => c.name),
+      .then((data) => data.json())
+      .then((c) => c.name)
   );
-  const resPlanets = resJson.planets.map(url =>
+  const resPlanets = resJson.planets.map((url) =>
     fetch(url)
-      .then(data => data.json())
-      .then(c => c.name),
+      .then((data) => data.json())
+      .then((c) => c.name)
   );
-  const resSpecies = resJson.species.map(url =>
+  const resSpecies = resJson.species.map((url) =>
     fetch(url)
-      .then(data => data.json())
-      .then(c => c.name),
+      .then((data) => data.json())
+      .then((c) => c.name)
   );
-  const resStarships = resJson.starships.map(url =>
+  const resStarships = resJson.starships.map((url) =>
     fetch(url)
-      .then(data => data.json())
-      .then(c => c.name),
+      .then((data) => data.json())
+      .then((c) => c.name)
   );
-  const resVehicles = resJson.vehicles.map(url =>
+  const resVehicles = resJson.vehicles.map((url) =>
     fetch(url)
-      .then(data => data.json())
-      .then(c => c.name),
+      .then((data) => data.json())
+      .then((c) => c.name)
   );
   const characters = await Promise.all(resCharacters);
   const planets = await Promise.all(resPlanets);

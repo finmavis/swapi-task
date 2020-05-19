@@ -21,7 +21,7 @@ const HeaderStyle = styled.header`
   }
 `;
 
-export default function Header(props) {
+export default function Header() {
   return (
     <HeaderStyle>
       <Logo className='logo' />

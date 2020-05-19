@@ -7,10 +7,10 @@ import GlobalStyle from './shared/styles/base/global';
 const Header = loadable(() => import('./components/Header/Header'));
 const MovieList = loadable(() => import('./components/MovieList/MovieList'));
 const MovieDetail = loadable(() =>
-  import('./components/MovieDetail/MovieDetail'),
+  import('./components/MovieDetail/MovieDetail')
 );
 
-export default function App(props) {
+export default function App() {
   return (
     <Fragment>
       <Header />

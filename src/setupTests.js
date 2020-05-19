@@ -1,5 +1,8 @@
 import '@testing-library/jest-dom/extend-expect';
 
+/**
+ * Show a warning when we test component that called fetch not mocked
+ */
 beforeEach(() => {
   jest.spyOn(window, 'fetch').mockImplementation((...args) => {
     // eslint-disable-next-line

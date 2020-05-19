@@ -9,7 +9,7 @@ describe('<MovieLink />', () => {
     const { getByText } = render(
       <Router>
         <MovieLink id={1} />
-      </Router>,
+      </Router>
     );
     expect(getByText(/more info/i)).toBeInTheDocument();
     expect(getByText(/more info/i)).toHaveAttribute('href', '/movie/1');
