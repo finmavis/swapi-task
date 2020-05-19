@@ -13,7 +13,7 @@ export const getAllMovie = async () => {
 };
 
 export const getSingleMovie = async (id) => {
-  const res = await fetch(`${API_URL}${id}`);
+  const res = await fetch(`${API_URL}${id}/`);
   const resJson = await res.json();
   const resCharacters = resJson.characters.map((url) =>
     fetch(url)
