@@ -9,11 +9,11 @@ import { MOVIE_DETAIL_MOCK_DATA } from '../../shared/constants/mock-data.constan
 
 jest.mock('../../shared/hooks/useMovieDetail');
 
-afterEach(() => {
-  useMovieDetail.mockReset();
-});
-
 describe('<MovieDetail />', () => {
+  afterEach(() => {
+    useMovieDetail.mockReset();
+  });
+
   it('Should render Loader component', () => {
     const mockMatch = {
       params: {
