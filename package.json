@@ -43,7 +43,7 @@
     "src/**/*.{js,jsx,ts,tsx}": [
       "npm run lint:fix"
     ],
-    "src/**/*.{js,jsx,json,css,scss,md,mdx}": [
+    "src/**/*.{js,jsx,ts,tsx,json,css,scss,md,mdx}": [
       "npm run format"
     ]
   },
