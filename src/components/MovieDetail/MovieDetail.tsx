@@ -10,7 +10,7 @@ import useMovieDetail from '../../shared/hooks/useMovieDetail';
 
 export default function MovieDetail() {
   const { id } = useParams();
-  const { loading, movieDetail } = useMovieDetail(id);
+  const { loading, movieDetail } = useMovieDetail(Number(id));
 
   return (
     <Container>

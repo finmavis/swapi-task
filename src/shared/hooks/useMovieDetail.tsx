@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { getSingleMovie } from '../helpers/api';
 
 export default function useMovieDetail(
-  movieId: string | undefined
+  movieId: number
 ): UseMovieDetailHooksType {
   const [movieDetail, setMovieDetail] = useState<MovieDetailType>({
     title: null,
