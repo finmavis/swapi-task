@@ -1,7 +1,5 @@
-// Import all Dependencies
 import styled from 'styled-components';
 
-// Import all Themes
 import { COLOR_WHITE, COLOR_GRAY } from '../../shared/styles/themes/colors';
 
 export const Wrapper = styled.div`

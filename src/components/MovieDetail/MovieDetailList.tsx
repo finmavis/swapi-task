@@ -1,12 +1,9 @@
-// Import all Dependencies
 import React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
-// Import Styles
 import { Wrapper, Label } from './MovieDetail.style';
 
-// Import all Themes
 import { COLOR_BORDER } from '../../shared/styles/themes/colors';
 
 const WrapperCustom = styled(Wrapper)`
@@ -37,11 +34,11 @@ const ListItem = styled.li`
   }
 `;
 
-export default function MovieDetailList({ label, list }) {
+export default function MovieDetailList({ label, list }: MovieDetailListProps) {
   return (
     <WrapperCustom>
       <Label>{label}</Label>
-      {list.length ? (
+      {list?.length ? (
         <WrapperList>
           {list.map((data, i) => (
             <ListItem key={i}>{data}</ListItem>
@@ -53,6 +50,11 @@ export default function MovieDetailList({ label, list }) {
     </WrapperCustom>
   );
 }
+
+export type MovieDetailListProps = {
+  label: string;
+  list?: string[];
+};
 
 MovieDetailList.propTypes = {
   label: PropTypes.string.isRequired,

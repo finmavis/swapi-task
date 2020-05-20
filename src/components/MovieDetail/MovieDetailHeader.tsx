@@ -1,10 +1,8 @@
-// Import all Dependencies
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
-// Import all Themes
 import { COLOR_WHITE, COLOR_GRAY } from '../../shared/styles/themes/colors';
 
 const Header = styled.header`
@@ -45,7 +43,11 @@ const Team = styled.p`
   }
 `;
 
-export default function MovieDetailHeader({ title, director, producer }) {
+export default function MovieDetailHeader({
+  title,
+  director,
+  producer,
+}: MovieDetailHeaderProps) {
   return (
     <Header>
       <Back>
@@ -57,6 +59,12 @@ export default function MovieDetailHeader({ title, director, producer }) {
     </Header>
   );
 }
+
+export type MovieDetailHeaderProps = {
+  title: string | null;
+  director: string | null;
+  producer: string | null;
+};
 
 MovieDetailHeader.propTypes = {
   title: PropTypes.string,

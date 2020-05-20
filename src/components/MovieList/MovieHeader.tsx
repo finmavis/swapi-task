@@ -1,13 +1,10 @@
-// Import all Dependencies
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
-// Import all Helpers
 import { formatDate } from '../../shared/helpers/format-date';
 
-// Import all Themes
 import { COLOR_GRAY } from '../../shared/styles/themes/colors';
 
 const MovieHeaderStyle = styled.div`
@@ -27,7 +24,11 @@ const MovieDate = styled.span`
   font-size: 1.4rem;
 `;
 
-export default function MovieHeader({ id, title, releaseDate }) {
+export default function MovieHeader({
+  id,
+  title,
+  releaseDate,
+}: MovieHeaderProps) {
   return (
     <MovieHeaderStyle>
       <MovieTitle>
@@ -37,6 +38,12 @@ export default function MovieHeader({ id, title, releaseDate }) {
     </MovieHeaderStyle>
   );
 }
+
+export type MovieHeaderProps = {
+  id: number;
+  title: string;
+  releaseDate: string;
+};
 
 MovieHeader.propTypes = {
   id: PropTypes.number.isRequired,

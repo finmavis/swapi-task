@@ -1,17 +1,13 @@
-// Import all Dependencies
 import React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
-// Import all Components
 import MovieHeader from './MovieHeader';
 import MovieDescription from './MovieDescription';
 import MovieLink from './MovieLink';
 
-// Import all Styles
 import { Col } from '../../shared/styles/base/grid';
 
-// Import all Assets
 import bgCardOne from '../../shared/assets/images/bg-card-1.png';
 import bgCardTwo from '../../shared/assets/images/bg-card-2.png';
 import bgCardThree from '../../shared/assets/images/bg-card-3.png';
@@ -20,7 +16,6 @@ import bgCardFive from '../../shared/assets/images/bg-card-5.png';
 import bgCardSix from '../../shared/assets/images/bg-card-6.png';
 import bgCardSeven from '../../shared/assets/images/bg-card-7.png';
 
-// Import all Themes
 import {
   COLOR_BACKGROUND,
   COLOR_WHITE,
@@ -76,7 +71,12 @@ const MovieContent = styled.div`
   }
 `;
 
-export default function MovieItem({ id, title, description, releaseDate }) {
+export default function MovieItem({
+  id,
+  title,
+  description,
+  releaseDate,
+}: MovieItemProps) {
   return (
     <ColumnWithBackground>
       <MovieContent>
@@ -87,6 +87,13 @@ export default function MovieItem({ id, title, description, releaseDate }) {
     </ColumnWithBackground>
   );
 }
+
+export type MovieItemProps = {
+  id: number;
+  title: string;
+  description: string;
+  releaseDate: string;
+};
 
 MovieItem.propTypes = {
   id: PropTypes.number.isRequired,

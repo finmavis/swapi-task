@@ -1,8 +1,10 @@
 import { useState, useEffect } from 'react';
 import { getSingleMovie } from '../helpers/api';
 
-export default function useMovieDetail(movieId) {
-  const [movieDetail, setMovieDetail] = useState({
+export default function useMovieDetail(
+  movieId: string | undefined
+): UseMovieDetailHooksType {
+  const [movieDetail, setMovieDetail] = useState<MovieDetailType>({
     title: null,
     director: null,
     producer: null,
@@ -13,7 +15,7 @@ export default function useMovieDetail(movieId) {
     starships: [],
     vehicles: [],
   });
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState<boolean>(true);
 
   useEffect(() => {
     let mounted = true;
@@ -36,3 +38,20 @@ export default function useMovieDetail(movieId) {
     movieDetail,
   };
 }
+
+export type MovieDetailType = {
+  title: string | null;
+  director: string | null;
+  producer: string | null;
+  description: string | null;
+  characters: string[];
+  planets: string[];
+  species: string[];
+  starships: string[];
+  vehicles: string[];
+};
+
+export type UseMovieDetailHooksType = {
+  loading: boolean;
+  movieDetail: MovieDetailType;
+};

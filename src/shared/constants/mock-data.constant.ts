@@ -1,4 +1,6 @@
-export const MOVIE_DETAIL_MOCK_DATA = {
+import { MovieDetailType } from '../hooks/useMovieDetail';
+
+export const MOVIE_DETAIL_MOCK_DATA: MovieDetailType = {
   title: 'Something Title',
   director: 'Jonny Sins',
   producer: 'Jonny Stark',

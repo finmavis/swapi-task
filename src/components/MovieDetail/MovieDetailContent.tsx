@@ -1,14 +1,13 @@
-// Import all Dependencies
 import React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
-// Import all Components
 import MovieDetailHeader from './MovieDetailHeader';
 import MovieDetailDescription from './MovieDetailDescription';
 import MovieDetailList from './MovieDetailList';
 
-// Import all Themes
+import { MovieDetailType } from '../../shared/hooks/useMovieDetail';
+
 import {
   COLOR_WHITE,
   COLOR_BACKGROUND,
@@ -35,7 +34,7 @@ export default function MovieDetailContent({
   species,
   starships,
   vehicles,
-}) {
+}: MovieDetailType) {
   return (
     <Wrapper>
       <MovieDetailHeader

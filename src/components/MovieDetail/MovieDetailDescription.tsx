@@ -1,11 +1,11 @@
-// Import all Dependencies
 import React from 'react';
 import PropTypes from 'prop-types';
 
-// Import all Styles
 import { Wrapper, Label, Text } from './MovieDetail.style';
 
-export default function MovieDetailDescription({ description }) {
+export default function MovieDetailDescription({
+  description,
+}: MovieDetailDescriptionProps) {
   return (
     <Wrapper>
       <Label>Description</Label>
@@ -13,6 +13,10 @@ export default function MovieDetailDescription({ description }) {
     </Wrapper>
   );
 }
+
+export type MovieDetailDescriptionProps = {
+  description: string | null;
+};
 
 MovieDetailDescription.propTypes = {
   description: PropTypes.string,

@@ -1,18 +1,16 @@
-// Import all Dependencies
 import React from 'react';
+import { useParams } from 'react-router-dom';
 
-// Import all Component
 import MovieDetailContent from './MovieDetailContent';
 
-// Import all Styles
 import { Container } from '../../shared/styles/base/grid';
 import Loader from '../../shared/components/Loader/Loader';
 
-// Import all Hooks
 import useMovieDetail from '../../shared/hooks/useMovieDetail';
 
-export default function MovieDetail(props) {
-  const { loading, movieDetail } = useMovieDetail(props.match.params.id);
+export default function MovieDetail() {
+  const { id } = useParams();
+  const { loading, movieDetail } = useMovieDetail(id);
 
   return (
     <Container>

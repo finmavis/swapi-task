@@ -28,7 +28,7 @@ const LoaderStyle = styled.div`
   }
 `;
 
-const Loader = (props) => (
+const Loader = () => (
   <LoaderStyle data-testid='loader'>
     <LoaderLogo className='loader-logo' />
   </LoaderStyle>

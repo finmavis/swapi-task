@@ -15,8 +15,12 @@ export default function App() {
     <Fragment>
       <Header />
       <Switch>
-        <Route path='/movie/:id' component={MovieDetail} />
-        <Route path='/' component={MovieList} />
+        <Route path='/movie/:id'>
+          <MovieDetail />
+        </Route>
+        <Route path='/'>
+          <MovieList />
+        </Route>
       </Switch>
       <GlobalStyle />
     </Fragment>

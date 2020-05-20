@@ -1,6 +1,6 @@
 import { MONTH_NAMES } from '../constants/month-name.constant';
 
-export function formatDate(date) {
+export function formatDate(date: string): string {
   if (!date) {
     throw new Error('Missing required parameter');
   }
@@ -16,5 +16,5 @@ export function formatDate(date) {
   ) {
     throw new Error('Parameter format must be YYYY-MM-DD');
   }
-  return `${MONTH_NAMES[month - 1]} ${day}, ${year}`;
+  return `${MONTH_NAMES[Number(month) - 1]} ${day}, ${year}`;
 }
