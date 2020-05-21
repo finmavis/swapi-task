@@ -7,13 +7,14 @@ import MovieDetailContent from './MovieDetailContent';
 import { MOVIE_DETAIL_MOCK_DATA } from '../../shared/constants/mock-data.constant';
 
 describe('<MovieDetailContent />', () => {
-  it('Should render properly', () => {
+  test('Should render properly', () => {
     render(
       <Router>
         <MovieDetailContent {...MOVIE_DETAIL_MOCK_DATA} />
       </Router>
     );
 
+    const backLinkElement = screen.getByText(/back/i);
     const titleElement = screen.getByText(/something title/i);
     const directorElement = screen.getByText(/Jonny Sins/i);
     const producerElement = screen.getByText(/Jonny Stark/i);
@@ -26,6 +27,8 @@ describe('<MovieDetailContent />', () => {
     );
     const vehicleElement = screen.getByText(/car/i);
 
+    expect(backLinkElement).toBeInTheDocument();
+    expect(backLinkElement).toHaveAttribute('href', '/');
     expect(titleElement).toBeInTheDocument();
     expect(directorElement).toBeInTheDocument();
     expect(producerElement).toBeInTheDocument();

@@ -2,10 +2,21 @@ import React from 'react';
 import { MemoryRouter as Router } from 'react-router-dom';
 import { render, screen } from '@testing-library/react';
 
+import { formatDate } from '../../shared/helpers/format-date';
+
 import MovieItem from './MovieItem';
 
+const mockedFormatDate = formatDate as jest.Mock<string>;
+
+jest.mock('../../shared/helpers/format-date');
+
 describe('<MovieItem />', () => {
-  it('Should render properly', () => {
+  afterEach(() => {
+    mockedFormatDate.mockReset();
+  });
+
+  test('Should render properly', () => {
+    mockedFormatDate.mockImplementation(() => 'October 09, 2010');
     render(
       <Router>
         <MovieItem
@@ -25,6 +36,8 @@ describe('<MovieItem />', () => {
     expect(titleElement).toBeInTheDocument();
     expect(titleElement).toHaveAttribute('href', '/movie/1');
     expect(dateElement).toBeInTheDocument();
+    expect(mockedFormatDate).toHaveBeenCalledTimes(1);
+    expect(mockedFormatDate).toHaveBeenCalledWith('2010-10-09');
     expect(descriptionElement).toBeInTheDocument();
     expect(linkElement).toBeInTheDocument();
     expect(linkElement).toHaveAttribute('href', '/movie/1');

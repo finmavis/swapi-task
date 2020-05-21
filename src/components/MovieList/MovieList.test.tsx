@@ -15,7 +15,7 @@ describe('<MovieList />', () => {
     mockedUseMovieList.mockReset();
   });
 
-  it('Should render Loader Component on loading', () => {
+  test('Should render Loader Component on loading', () => {
     mockedUseMovieList.mockImplementation(() => {
       return {
         loading: true,
@@ -32,7 +32,7 @@ describe('<MovieList />', () => {
     expect(loader).toBeInTheDocument();
   });
 
-  it('Should render Movie List properly', () => {
+  test('Should render Movie List properly', () => {
     mockedUseMovieList.mockImplementation(() => {
       return {
         loading: false,
@@ -72,7 +72,6 @@ describe('<MovieList />', () => {
     const yearMovieTwoElement = screen.getByText(/1996/i);
     const yearMovieThreeElement = screen.getByText(/2015/i);
 
-    // Assert
     expect(titleElement).toHaveLength(3);
     expect(descriptionElement).toHaveLength(3);
     expect(linkElement).toHaveLength(3);

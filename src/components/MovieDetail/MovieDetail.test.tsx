@@ -9,18 +9,20 @@ import { MOVIE_DETAIL_MOCK_DATA } from '../../shared/constants/mock-data.constan
 
 jest.mock('../../shared/hooks/useMovieDetail');
 
+const mockedUseMovieDetail = useMovieDetail as jest.Mock<any>;
+
 describe('<MovieDetail />', () => {
   afterEach(() => {
-    useMovieDetail.mockReset();
+    mockedUseMovieDetail.mockReset();
   });
 
-  it('Should render Loader component', () => {
+  test('Should render Loader component', () => {
     const mockMatch = {
       params: {
         id: '1',
       },
     };
-    useMovieDetail.mockImplementation(() => {
+    mockedUseMovieDetail.mockImplementation(() => {
       return {
         loading: true,
       };
@@ -34,13 +36,13 @@ describe('<MovieDetail />', () => {
     expect(getByTestId(/loader/i)).toBeInTheDocument();
   });
 
-  it('Should render Movie Detail properly', () => {
+  test('Should render Movie Detail properly', () => {
     const mockMatch = {
       params: {
         id: '1',
       },
     };
-    useMovieDetail.mockImplementation(() => {
+    mockedUseMovieDetail.mockImplementation(() => {
       return {
         loading: false,
         movieDetail: {
