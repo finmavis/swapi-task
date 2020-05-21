@@ -1,6 +1,6 @@
 import React from 'react';
 import { MemoryRouter as Router } from 'react-router-dom';
-import { render } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 
 import MovieList from './MovieList';
 
@@ -8,33 +8,32 @@ import useMovieList from '../../shared/hooks/useMovieList';
 
 jest.mock('../../shared/hooks/useMovieList');
 
-afterEach(() => {
-  useMovieList.mockReset();
-});
+const mockedUseMovieList = useMovieList as jest.Mock;
 
 describe('<MovieList />', () => {
+  afterEach(() => {
+    mockedUseMovieList.mockReset();
+  });
+
   it('Should render Loader Component on loading', () => {
-    // Mocks
-    useMovieList.mockImplementation(() => {
+    mockedUseMovieList.mockImplementation(() => {
       return {
         loading: true,
       };
     });
 
-    // Render
-    const { getByTestId } = render(
+    render(
       <Router>
         <MovieList />
       </Router>
     );
 
-    // Assert
-    expect(getByTestId(/loader/i)).toBeInTheDocument();
+    const loader = screen.getByTestId(/loader/i);
+    expect(loader).toBeInTheDocument();
   });
 
   it('Should render Movie List properly', () => {
-    // Mocks
-    useMovieList.mockImplementation(() => {
+    mockedUseMovieList.mockImplementation(() => {
       return {
         loading: false,
         movieList: [
@@ -60,19 +59,25 @@ describe('<MovieList />', () => {
       };
     });
 
-    // Render
-    const { getAllByText, getByText } = render(
+    render(
       <Router>
         <MovieList />
       </Router>
     );
 
+    const titleElement = screen.getAllByText(/movie title/i);
+    const descriptionElement = screen.getAllByText(/movie description/i);
+    const linkElement = screen.getAllByText(/more info/i);
+    const yearMovieOneElement = screen.getByText(/2010/i);
+    const yearMovieTwoElement = screen.getByText(/1996/i);
+    const yearMovieThreeElement = screen.getByText(/2015/i);
+
     // Assert
-    expect(getAllByText(/movie title/i)).toHaveLength(3);
-    expect(getAllByText(/movie description/i)).toHaveLength(3);
-    expect(getAllByText(/more info/i)).toHaveLength(3);
-    expect(getByText(/2015/i)).toBeInTheDocument();
-    expect(getByText(/1996/i)).toBeInTheDocument();
-    expect(getByText(/2010/i)).toBeInTheDocument();
+    expect(titleElement).toHaveLength(3);
+    expect(descriptionElement).toHaveLength(3);
+    expect(linkElement).toHaveLength(3);
+    expect(yearMovieOneElement).toBeInTheDocument();
+    expect(yearMovieTwoElement).toBeInTheDocument();
+    expect(yearMovieThreeElement).toBeInTheDocument();
   });
 });
