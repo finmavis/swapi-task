@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { getSingleMovie } from '../helpers/api';
+import { getSingleMovie, MovieDetailType } from '../helpers/api';
 
 export default function useMovieDetail(
   movieId: number
@@ -38,18 +38,6 @@ export default function useMovieDetail(
     movieDetail,
   };
 }
-
-export type MovieDetailType = {
-  title: string | null;
-  director: string | null;
-  producer: string | null;
-  description: string | null;
-  characters: string[];
-  planets: string[];
-  species: string[];
-  starships: string[];
-  vehicles: string[];
-};
 
 export type UseMovieDetailHooksType = {
   loading: boolean;

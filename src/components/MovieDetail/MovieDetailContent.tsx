@@ -6,7 +6,7 @@ import MovieDetailHeader from './MovieDetailHeader';
 import MovieDetailDescription from './MovieDetailDescription';
 import MovieDetailList from './MovieDetailList';
 
-import { MovieDetailType } from '../../shared/hooks/useMovieDetail';
+import { MovieDetailType } from '../../shared/helpers/api';
 
 import {
   COLOR_WHITE,

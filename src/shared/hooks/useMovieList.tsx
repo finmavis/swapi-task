@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-import { getAllMovie } from '../helpers/api';
+import { getAllMovie, MovieDataType } from '../helpers/api';
 
 export default function useMovieList(): MovieListHooksType {
   const [movieList, setMovieList] = useState<MovieDataType[]>([]);
@@ -31,11 +31,4 @@ export default function useMovieList(): MovieListHooksType {
 export type MovieListHooksType = {
   loading: boolean;
   movieList: MovieDataType[];
-};
-
-export type MovieDataType = {
-  id: number;
-  title: string;
-  description: string;
-  releaseDate: string;
 };

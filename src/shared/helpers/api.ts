@@ -1,6 +1,6 @@
 import { API_URL } from '../constants/api.constant';
 
-export const getAllMovie = async () => {
+export const getAllMovie = async (): Promise<MovieDataType[]> => {
   const res = await fetch(API_URL);
   const resJson: FilmsResponse = await res.json();
   const editedMovieList = resJson.results.map((movie) => ({
@@ -12,7 +12,7 @@ export const getAllMovie = async () => {
   return editedMovieList;
 };
 
-export const getSingleMovie = async (id: number) => {
+export const getSingleMovie = async (id: number): Promise<MovieDetailType> => {
   const res = await fetch(`${API_URL}${id}/`);
   const resJson: FilmResponse = await res.json();
   const resCharacters = resJson.characters.map((url) =>
@@ -58,6 +58,25 @@ export const getSingleMovie = async (id: number) => {
     vehicles,
   };
   return data;
+};
+
+export type MovieDataType = {
+  id: number;
+  title: string;
+  description: string;
+  releaseDate: string;
+};
+
+export type MovieDetailType = {
+  title: string | null;
+  director: string | null;
+  producer: string | null;
+  description: string | null;
+  characters: string[];
+  planets: string[];
+  species: string[];
+  starships: string[];
+  vehicles: string[];
 };
 
 export type FilmsResponse = {

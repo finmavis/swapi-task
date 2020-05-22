@@ -6,6 +6,8 @@ import MovieHeader from './MovieHeader';
 import MovieDescription from './MovieDescription';
 import MovieLink from './MovieLink';
 
+import { MovieDataType } from '../../shared/helpers/api';
+
 import { Col } from '../../shared/styles/base/grid';
 
 import bgCardOne from '../../shared/assets/images/bg-card-1.png';
@@ -76,7 +78,7 @@ export default function MovieItem({
   title,
   description,
   releaseDate,
-}: MovieItemProps) {
+}: MovieDataType) {
   return (
     <ColumnWithBackground>
       <MovieContent>
@@ -87,13 +89,6 @@ export default function MovieItem({
     </ColumnWithBackground>
   );
 }
-
-export type MovieItemProps = {
-  id: number;
-  title: string;
-  description: string;
-  releaseDate: string;
-};
 
 MovieItem.propTypes = {
   id: PropTypes.number.isRequired,

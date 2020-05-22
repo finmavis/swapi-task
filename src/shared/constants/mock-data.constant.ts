@@ -1,4 +1,4 @@
-import { MovieDetailType } from '../hooks/useMovieDetail';
+import { MovieDetailType } from '../helpers/api';
 
 export const MOVIE_DETAIL_MOCK_DATA: MovieDetailType = {
   title: 'Something Title',
