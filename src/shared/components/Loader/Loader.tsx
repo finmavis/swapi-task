@@ -1,9 +1,9 @@
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
 
-import { ReactComponent as LoaderLogo } from '../../assets/icon/loader.svg';
+import { ReactComponent as LoaderLogo } from 'src/shared/assets/icon/loader.svg';
 
-import { COLOR_YELLOW } from '../../styles/themes/colors';
+import { COLOR_YELLOW } from 'src/shared/styles/themes/colors';
 
 const loaderSpin = keyframes`
   from {

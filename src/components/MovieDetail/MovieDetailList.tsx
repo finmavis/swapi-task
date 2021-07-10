@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 import { Wrapper, Label } from './MovieDetail.style';
 
-import { COLOR_BORDER } from '../../shared/styles/themes/colors';
+import { COLOR_BORDER } from 'src/shared/styles/themes/colors';
 
 const WrapperCustom = styled(Wrapper)`
   padding-top: 3rem;

@@ -2,13 +2,13 @@ import React from 'react';
 import { MemoryRouter as Router } from 'react-router-dom';
 import { render, screen } from '@testing-library/react';
 
-import { formatDate } from '../../shared/helpers/format-date';
+import { formatDate } from 'src/shared/helpers/format-date';
 
 import MovieItem from './MovieItem';
 
 const mockedFormatDate = formatDate as jest.Mock<string>;
 
-jest.mock('../../shared/helpers/format-date');
+jest.mock('src/shared/helpers/format-date');
 
 describe('<MovieItem />', () => {
   afterEach(() => {

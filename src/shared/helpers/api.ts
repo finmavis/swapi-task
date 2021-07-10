@@ -4,7 +4,12 @@ export const getAllMovie = async (): Promise<MovieDataType[]> => {
   const res = await fetch(API_URL);
   const resJson: FilmsResponse = await res.json();
   const editedMovieList = resJson.results.map((movie) => ({
-    id: parseFloat(movie.url.slice(27, 28)),
+    id: Number(
+      movie.url
+        .split('/')
+        .filter(Boolean)
+        .pop()
+    ),
     title: movie.title,
     description: movie.opening_crawl,
     releaseDate: movie.release_date,
@@ -16,27 +21,27 @@ export const getSingleMovie = async (id: number): Promise<MovieDetailType> => {
   const res = await fetch(`${API_URL}${id}/`);
   const resJson: FilmResponse = await res.json();
   const resCharacters = resJson.characters.map((url) =>
-    fetch(url.replace('http', 'https'))
+    fetch(url)
       .then((data) => data.json())
       .then((c: CharactersResponse) => c.name)
   );
   const resPlanets = resJson.planets.map((url) =>
-    fetch(url.replace('http', 'https'))
+    fetch(url)
       .then((data) => data.json())
       .then((c: PlanetsResponse) => c.name)
   );
   const resSpecies = resJson.species.map((url) =>
-    fetch(url.replace('http', 'https'))
+    fetch(url)
       .then((data) => data.json())
       .then((c: SpeciesResponse) => c.name)
   );
   const resStarships = resJson.starships.map((url) =>
-    fetch(url.replace('http', 'https'))
+    fetch(url)
       .then((data) => data.json())
       .then((c: StarshipsResponse) => c.name)
   );
   const resVehicles = resJson.vehicles.map((url) =>
-    fetch(url.replace('http', 'https'))
+    fetch(url)
       .then((data) => data.json())
       .then((c: VehiclesResponse) => c.name)
   );

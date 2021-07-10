@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-import { getAllMovie, MovieDataType } from '../helpers/api';
+import { getAllMovie, MovieDataType } from 'src/shared/helpers/api';
 
 export default function useMovieList(): MovieListHooksType {
   const [movieList, setMovieList] = useState<MovieDataType[]>([]);

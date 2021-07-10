@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
-import { COLOR_WHITE, COLOR_GRAY } from '../../shared/styles/themes/colors';
+import { COLOR_WHITE, COLOR_GRAY } from 'src/shared/styles/themes/colors';
 
 const Header = styled.header`
   display: flex;

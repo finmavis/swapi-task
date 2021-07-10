@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { getSingleMovie, MovieDetailType } from '../helpers/api';
+import { getSingleMovie, MovieDetailType } from 'src/shared/helpers/api';
 
 export default function useMovieDetail(
   movieId: number

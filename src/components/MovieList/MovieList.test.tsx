@@ -4,9 +4,9 @@ import { render, screen } from '@testing-library/react';
 
 import MovieList from './MovieList';
 
-import useMovieList from '../../shared/hooks/useMovieList';
+import useMovieList from 'src/shared/hooks/useMovieList';
 
-jest.mock('../../shared/hooks/useMovieList');
+jest.mock('src/shared/hooks/useMovieList');
 
 const mockedUseMovieList = useMovieList as jest.Mock;
 

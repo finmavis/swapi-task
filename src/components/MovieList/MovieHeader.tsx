@@ -1,11 +1,10 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
-import PropTypes from 'prop-types';
 
-import { formatDate } from '../../shared/helpers/format-date';
-
-import { COLOR_GRAY } from '../../shared/styles/themes/colors';
+import { formatDate } from 'src/shared/helpers/format-date';
+import { COLOR_GRAY } from 'src/shared/styles/themes/colors';
 
 const MovieHeaderStyle = styled.div`
   display: flex;

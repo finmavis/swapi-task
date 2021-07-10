@@ -3,13 +3,13 @@ import { useParams } from 'react-router-dom';
 
 import MovieDetailContent from './MovieDetailContent';
 
-import { Container } from '../../shared/styles/base/grid';
-import Loader from '../../shared/components/Loader/Loader';
+import { Container } from 'src/shared/styles/base/grid';
+import Loader from 'src/shared/components/Loader/Loader';
 
-import useMovieDetail from '../../shared/hooks/useMovieDetail';
+import useMovieDetail from 'src/shared/hooks/useMovieDetail';
 
 export default function MovieDetail() {
-  const { id } = useParams();
+  const { id } = useParams<{ id: string }>();
   const { loading, movieDetail } = useMovieDetail(Number(id));
 
   return (

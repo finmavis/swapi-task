@@ -6,12 +6,8 @@ import MovieDetailHeader from './MovieDetailHeader';
 import MovieDetailDescription from './MovieDetailDescription';
 import MovieDetailList from './MovieDetailList';
 
-import { MovieDetailType } from '../../shared/helpers/api';
-
-import {
-  COLOR_WHITE,
-  COLOR_BACKGROUND,
-} from '../../shared/styles/themes/colors';
+import { MovieDetailType } from 'src/shared/helpers/api';
+import { COLOR_WHITE, COLOR_BACKGROUND } from 'src/shared/styles/themes/colors';
 
 const Wrapper = styled.section`
   display: flex;

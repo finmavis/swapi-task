@@ -2,10 +2,10 @@ import React from 'react';
 
 import MovieItem from './MovieItem';
 
-import { Container, Row } from '../../shared/styles/base/grid';
-import Loader from '../../shared/components/Loader/Loader';
+import { Container, Row } from 'src/shared/styles/base/grid';
+import Loader from 'src/shared/components/Loader/Loader';
 
-import useMovieList from '../../shared/hooks/useMovieList';
+import useMovieList from 'src/shared/hooks/useMovieList';
 
 export default function MovieList() {
   const { loading, movieList } = useMovieList();

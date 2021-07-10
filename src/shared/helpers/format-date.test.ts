@@ -10,6 +10,7 @@ describe('Format Date helpers', () => {
 
   it('Should throw error if called with no parameter', () => {
     expect(() => {
+      // @ts-expect-error
       formatDate();
     }).toThrow(/missing required parameter/i);
   });

@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
-import { COLOR_YELLOW, COLOR_RED } from '../../shared/styles/themes/colors';
+import { COLOR_YELLOW, COLOR_RED } from 'src/shared/styles/themes/colors';
 
 const MovieLinkStyle = styled.p`
   padding-top: 1.2rem;

@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
-import { COLOR_WHITE } from '../../shared/styles/themes/colors';
+import { COLOR_WHITE } from 'src/shared/styles/themes/colors';
 
 const MovieDescriptionStyle = styled.p`
   font-family: inherit;

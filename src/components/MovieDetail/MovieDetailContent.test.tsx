@@ -4,7 +4,7 @@ import { render, screen } from '@testing-library/react';
 
 import MovieDetailContent from './MovieDetailContent';
 
-import { MOVIE_DETAIL_MOCK_DATA } from '../../shared/constants/mock-data.constant';
+import { MOVIE_DETAIL_MOCK_DATA } from 'src/shared/constants/mock-data.constant';
 
 describe('<MovieDetailContent />', () => {
   test('Should render properly', () => {
